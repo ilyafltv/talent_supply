@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cabinet.css">
+    <title>Policy</title>
+</head>
+<body>
+    <header>
+        <!-- Popup loading with script(Components/Popup.js) -->
+        <div class="popup popup-closed" id="popup"></div>
+
+        <!-- Menu loading width script(Components/Menu.js) -->
+        <div id="menu"></div>
+    </header>  
+    <main>
+        <!-- Services block -->
+        <div class="cabinet__content-block">
+            <div class="container-services">
+                <h2>Select services</h2>
+                <div class="filter-buttons">
+                    <div id="filterSection">
+                        <select id="categoryFilter" onchange="filterServices()">
+                            <option value="all">All categories</option>
+    
+                            <option value="web">Web-development</option>
+                            <option value="design">Design</option>
+                            <option value="marketing">Marketing</option>
+                        </select>
+                        <select id="subcategoryFilter" onchange="filterServices()">
+                            <option value="all">All services</option>
+    
+                            <option value="frontend">Frontend</option>
+                            <option value="backend">Backend</option>
+                            <option value="graphic">Graphic design</option>
+                            <option value="seo">SEO</option>
+                        </select>
+                    </div>
+
+                    <a class="btn-history" onclick="popup.renderPopupHistory()">Order History</a>
+    
+                </div>
+                <ul id="servicesList">
+                <!-- Услуги будут добавлены здесь через JavaScript -->
+                </ul>
+            </div>
+
+            <div id="orderBlock">
+                <button class="btn-main">Order now</button>
+            </div>
+
+            <!-- Background-images -->
+            <div class="bg-form header__background-photo-2">
+                <img src="images/bg-desk-2.png">
+            </div>        
+
+        </div>
+
+
+    </main>
+    <footer>
+        <!-- Popup loading with script(Components/Footer.js) -->
+        <div id="footer"></div>
+    </footer>
+
+    
+    <script src="scripts/cabinet.js"></script>
+    <script src="Components/Popup.js"></script>
+    <script src="Components/Footer.js"></script>
+    <script src="Components/Menu.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

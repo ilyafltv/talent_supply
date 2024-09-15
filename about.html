@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <title>Policy</title>
+</head>
+<body>
+    <header>
+        <!-- Popup loading with script(Components/Popup.js) -->
+        <div class="popup popup-closed" id="popup"></div>
+
+        <!-- Menu loading width script(Components/Menu.js) -->
+        <div id="menu"></div>
+    </header>  
+    <main>
+        <!-- About Us block -->
+        <div class="about__content-block">
+            <div class="container">
+                <h1>About Us</h1>
+                <div class="about__content-block__main-content">
+                    <img src="images/about-block-1.png" alt="Talent Supply">
+                    <div class="about__content-block__main-content__info">
+                        <h3>What does Talent Supply specialize in?</h3>
+                        <p>We offer a platform that helps you navigate the world  through of hiring employees for any projects!<br><br>
+                            Regardless of the uniqueness of your project, we guarantee your hiring needs will be met with our diverse selection of candidates.</p>
+                        <div class="about__content-block__main-content__info__buttons">
+                            <button class="btn-main" onclick="popup.renderPopupRegistration()">Cooperate</button>
+
+                            <div class="about__content__social-media">
+                                <a href="#"><img src="images/instagram.svg" alt="instagram"></a>
+                                <a href="#"><img src="images/facebook.svg" alt="facebook"></a>
+                                <a href="#"><img src="images/x.svg" alt="twitter"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__content-block__additional-content">
+                    <div class="about__content-block__additional-content__info">
+                        <h3>Entrust the work to professionals</h3>
+                        <p>Hiring skilled specialists for your tasks offers numerous benefits. Firstly, these experts possess essential skills and experience, ensuring top-tier results.<br><br>
+                        Secondly, their proficiency allows quicker and more efficient task completion. Entrusting tasks to specialists also frees up time to focus on critical business aspects, boosting productivity and driving company growth. </p>
+                    </div>
+                    <img src="images/about-block-2.png" alt="Talent Supply">
+                </div>
+
+            </div>
+            <!-- Background-images -->
+            <div class="bg-form header__background-photo-2">
+                <img src="images/bg-desk-2.png">
+            </div> 
+            <div class="bg-form header__background-photo-1">
+                <img src="images/bg-desk-1.png">
+            </div>
+            <div class="bg-form header__background-photo-1__mobile">
+                <img src="images/bg-mobile-1.png">
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <!-- Popup loading with script(Components/Footer.js) -->
+        <div id="footer"></div>
+    </footer>
+
+    <script src="Components/Popup.js"></script>
+    <script src="Components/Footer.js"></script>
+    <script src="Components/Menu.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

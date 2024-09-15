@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <title>Policy</title>
+</head>
+<body>
+    <header>
+        <!-- Popup loading with script(Components/Popup.js) -->
+        <div class="popup popup-closed" id="popup"></div>
+
+        <!-- Menu loading width script(Components/Menu.js) -->
+        <div id="menu"></div>
+    </header>  
+    <main>
+        <!-- Contacts block -->
+        <div class="contacts__content-block">
+            <div class="container">
+                <h2>Contacts</h2>
+                <div class="contacts__content-block__items">
+
+                    <!-- Info block -->
+                    <div class="contacts__content-block__company-info">
+                        <div class="contacts__content-block__company-info__text-content">
+                            <h3>Get in touch</h3>
+    
+                            <div class="company-info__text-content__line">
+                                <img src="images/phone-icon.svg" alt="Phone icon">
+                                <a href="#">777-777-77-77</a>
+                            </div>
+    
+                            <div class="company-info__text-content__line">
+                                <img src="images/mail-icon.svg" alt="Phone icon">
+                                <a href="#">info@talent-supply.com</a>
+                            </div>
+    
+                            <p>Talent Supply<br>
+                            LLC2327 Washington St Apt 3c<br>
+                            Hollywood<br>
+                            FL<br>
+                            33020</p>
+    
+                            <div class="company-info__text-content__social-media">
+                                <a href="#"><img src="images/instagram.svg" alt="instagram"></a>
+                                <a href="#"><img src="images/facebook.svg" alt="facebook"></a>
+                                <a href="#"><img src="images/x.svg" alt="twitter"></a>
+                            </div>
+    
+                        </div>
+                        <div class="contacts__content-block__company-info__map">
+                            <h3>Our office on the map:</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2830.8830445807616!2d-68.7682961!3d44.8035721!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cae4b4e2b6507c3%3A0xf704f4dd2c591327!2zOTcgQnJvYWR3YXksIEJhbmdvciwgTUUgMDQ0MDEsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1720042355038!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Form block -->
+                    <div class="contacts__content-block__content-form">
+                        <h3>Send us your message</h3>
+
+                        <div class="contacts__content-block__content-form__form">
+                            <form>
+                                <label>Full name</label>
+                                <input type="text" placeholder="Enter your full name"/>
+
+                                <label>Company name</label>
+                                <input type="text" placeholder="Your Company"/>
+
+                                <label>Phone</label>
+                                <input type="text" placeholder="(777) 777-7777"/>
+
+                                <label>Email</label>
+                                <input type="email" placeholder="example@gmail.com"/>
+
+                                <label>What US state are you in?</label>
+                                <select value="Please select" name="" id="">
+                                    <img src="images/arrow-select.svg" class="select-arrow"></img>
+                                    <option value="" disabled selected>Please select</option>
+                                    <option value="1">New York</option>
+                                    <option value="2">Texas</option>
+                                    <option value="3">Florida</option>
+                                </select>
+
+                                <label>How can we help?</label>
+                                <textarea rows="4" name="" id=""></textarea>
+
+                                <label>Anything else we should know?</label>
+                                <textarea rows="4" name="" id=""></textarea>
+
+                                <input type="submit" class="btn-main" value="Send Message">
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Background-images -->
+            <div class="bg-form header__background-photo-2">
+                <img src="images/bg-desk-2.png">
+            </div> 
+            <div class="bg-form header__background-photo-1">
+                <img src="images/bg-desk-1.png">
+            </div>
+            <div class="bg-form header__background-photo-1__mobile">
+                <img src="images/bg-mobile-1.png">
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <!-- Popup loading with script(Components/Footer.js) -->
+        <div id="footer"></div>
+    </footer>
+
+    <script src="Components/Popup.js"></script>
+    <script src="Components/Footer.js"></script>
+    <script src="Components/Menu.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
